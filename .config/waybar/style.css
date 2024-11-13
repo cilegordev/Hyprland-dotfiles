@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "PlusJakartaSans-Medium, Segoe-Fluent-Icons-Medium";
+    font-family: "Windows 10 Panel Font, PlusJakartaSans, Segoe Fluent Icons";
     font-size: 13px;
     padding: 1px;
     margin: 0px 0px 1px 0px;
@@ -341,7 +341,7 @@ label:focus {
 }
 
 #custom-power {
-    background-color: transparent;
+    background-color: #2777ff;
     border-radius: 4px;
 }
 
