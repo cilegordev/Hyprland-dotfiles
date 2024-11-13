@@ -25,6 +25,7 @@
     // ],
     "modules-right": [
         // "mpd",
+        "network#speed#2",
         "idle_inhibitor",
         "pulseaudio",
         // "network",
@@ -45,16 +46,16 @@
          "warp-on-scroll": false,
          "format": "{icon}",
          "format-icons": {
-         "1": "", 
-         "2": "", 
-         "3": "", 
-         "4": "", 
-         "5": "", 
-         "6": "", 
-         "7": "",  
-         "8": "", 
+         "1": "", 
+         "2": "", 
+         "3": "", 
+         "4": "", 
+         "5": "", 
+         "6": "", 
+         "7": "",  
+         "8": "", 
          "9": "", 
-         "10": "",
+         "10": "",
              "urgent": "",
              "focused": "",
              "default": ""
@@ -117,17 +118,17 @@
         "spacing": 10
     },
     "clock": {
-	"format": " {:%H:%M}",
+	"format": " {:%H:%M}",
         "timezone": "Asia/Jakarta",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%d-%m-%Y}"
+        "format-alt": " {:%d-%m-%Y}"
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}% ",
         "tooltip": true
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% "
     },
     "temperature": {
         "thermal-zone": 2,
@@ -135,12 +136,12 @@
         "critical-threshold": 80,
         "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": [""]
     },
     "backlight": {
         // "device": "acpi_video1",
         "format": "{icon} {percent}%",
-        "format-icons": ["","","","","","","","","",]
+        "format-icons": ["", "", "", "", ""]
     },
     "battery": {
         "states": {
@@ -149,10 +150,10 @@
             "critical": 15
         },
         "format": "{icon} {capacity}%",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
+        "format-full": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", "", "", "", "", "", "", "",]
@@ -180,6 +181,15 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
+    "network#speed#2": {
+    "interval": 2,
+    "format": "{ifname}",
+    "format-wifi": "  {bandwidthDownBits}",
+    "format-ethernet": "{bandwidthDownBytes}",
+    "tooltip": false,
+    "format-disconnected": "",
+    "max-length": 50
+  },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
@@ -195,7 +205,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", "", ""]
+            "default": ["", "", "", "",]
         },
         "on-click": "pavucontrol"
     },
