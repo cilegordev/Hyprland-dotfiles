@@ -1,9 +1,9 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
+    "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "margin-top": 4,
@@ -15,18 +15,18 @@
         "hyprland/workspaces",
         "cpu",
         "memory",
-        "temperature"
+        "temperature",
         // "mode",
         // "scratchpad",
-        // "custom/media"
+        "custom/media"
     ],
-    // "modules-center": [
-    //     "hyprland/window"
-    // ],
+    "modules-center": [
+        "hyprland/window"
+    ],
     "modules-right": [
         // "mpd",
         "network#speed#2",
-        "idle_inhibitor",
+        // "idle_inhibitor",
         "pulseaudio",
         // "network",
         // "power-profiles-daemon",
@@ -191,7 +191,7 @@
     "max-length": 50
   },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+        "scroll-step": 1, // %, can be a float
         "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",

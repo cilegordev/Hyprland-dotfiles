@@ -23,7 +23,7 @@ window#waybar.empty {
     background-color: transparent;
 }
 window#waybar.solo {
-    background-color: #FFFFFF;
+    background-color: transparent;
 }
 
 window#waybar.termite {
@@ -96,6 +96,7 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-media,
+#custom-power,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -104,7 +105,7 @@ button:hover {
 #mpd {
     padding: 0px 6px;
     margin-bottom: -1px;
-    color: #ffffff;
+    color: #000000;
 }
 
 #window,
@@ -180,7 +181,7 @@ label:focus {
 
 #cpu {
     background-color: #2ecc71;
-    color: #ffffff;
+    color: #000000;
 }
 
 #memory {
@@ -224,7 +225,7 @@ label:focus {
 
 #custom-media {
     background-color: #66cc99;
-    color: #2a5c45;
+    color: #000000;
     min-width: 100px;
 }
 
@@ -259,6 +260,7 @@ label:focus {
 
 #idle_inhibitor {
     background-color: #2d3436;
+    color: #ffffff;
 }
 
 #idle_inhibitor.activated {
