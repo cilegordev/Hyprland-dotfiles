@@ -23,7 +23,7 @@ window#waybar.empty {
     background-color: transparent;
 }
 window#waybar.solo {
-    background-color: #FFFFFF;
+    background-color: transparent;
 }
 
 window#waybar.termite {
@@ -224,7 +224,7 @@ label:focus {
 
 #custom-media {
     background-color: #66cc99;
-    color: #2a5c45;
+    color: #000000;
     min-width: 100px;
 }
 

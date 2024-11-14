@@ -2,7 +2,15 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/cilegordev/Hyprland-dotfiles?style=for-the-badge&color=808080)
 
-Free bloat❗️ just installed from repo❗️ nothing outside the repo❗️ hyprland, waybar, swaybg, wofi, brightnessctl, pulseaudio and amixer✅
+Free bloat❗️ just installed from repo❗️ 0 from outside repo❗️ 
+- hyprland
+- waybar 
+- wofi 
+- brightnessctl
+- pulseaudio
+- amixer
+- playerctl 
+- mpd
 
 |  Preview  |
 |  -  |
