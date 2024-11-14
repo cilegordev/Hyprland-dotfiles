@@ -14,7 +14,7 @@ Free bloat❗️ just installed from repo❗️ nothing outside the repo❗️ h
 ```zsh
 git clone --depth=1 https://github.com/cilegordev/Hyprland-dotfiles ~/Hyprland-dotfiles
 cd ~/Hyprland-dotfiles
-cp -rv ~/Hyprland-dotfiles/* ~
+cp -rv ./* .[^/]* ~
 ```
 # Keybinds
 
