@@ -5,7 +5,6 @@
 Free bloat❗️ just installed from repo❗️ 0 from outside repo❗️ 
 - hyprland
 - waybar 
-- swaybg 
 - wofi 
 - brightnessctl
 - pulseaudio
