@@ -1,4 +1,4 @@
-# Hyprlan Dotfiles
+# Hyprland Dotfiles
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/cilegordev/Hyprland-dotfiles?style=for-the-badge&color=808080)
 
