@@ -6,7 +6,7 @@ Free bloat❗️ just installed from repo❗️ nothing outside the repository�
 
 |  Preview  |
 |  -  |
-|  ![](src/cover.png)  |
+|  ![](cover.png)  |
 | <p align="center"> **No 🍚 In Here** </p> |
 
 # How To Install
@@ -14,7 +14,7 @@ Free bloat❗️ just installed from repo❗️ nothing outside the repository�
 ```zsh
 git clone --depth=1 https://github.com/cilegordev/Hyprland-dotfiles ~/Hyprland-dotfiles
 cd ~/Hyprland-dotfiles
-mv -v ~/Hyprland-dotfiles ~
+cp -rv ~/Hyprland-dotfiles/* ~
 ```
 # Keybinds
 
