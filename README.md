@@ -9,6 +9,7 @@ Free bloat❗️ just installed from repo❗️ 0 from outside repo❗️
 - brightnessctl
 - pulseaudio
 - amixer
+- power-profiles-daemon
 - playerctl 
 - mpd
 
