@@ -17,8 +17,10 @@ sudo rmmod -f uvcvideo
 # sudo rmmod -f snd_pcm
 sudo rmmod -f bluetooth
 sudo rfkill block bluetooth
+sudo systemctl disable bluetooth
+sudo /etc/init.d/bluetooth stop
 sudo systemctl disable cups
-sudo /etc/init.d/ssh cups
+sudo /etc/init.d/cups stop
 sudo systemctl disable ssh.service
 sudo /etc/init.d/ssh stop
 
