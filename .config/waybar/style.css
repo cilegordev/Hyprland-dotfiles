@@ -287,9 +287,8 @@ label:focus {
 
 #language {
     background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
+    color: #000000;
+    padding: 5 5px;
     min-width: 16px;
 }
 
@@ -297,7 +296,6 @@ label:focus {
     background: #97e1ad;
     color: #000000;
     padding: 0 0px;
-    margin: 0 5px;
     min-width: 16px;
 }
 
@@ -307,6 +305,7 @@ label:focus {
 
 #keyboard-state > label.locked {
     background: rgba(0, 0, 0, 0.2);
+    margin: 1px;
 }
 
 #scratchpad {

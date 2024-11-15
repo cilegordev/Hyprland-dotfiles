@@ -10,11 +10,12 @@ Free bloat❗️ just installed from repo❗️ 0 from outside repo❗️
 - pulseaudio
 - amixer
 - playerctl 
+- power-profiles-daemon
 - mpd
 
 |  Preview  |
 |  -  |
-|  ![](cover.png)  |
+|  ![](Screenshot.png)  |
 | <p align="center"> **No 🍚 In Here** </p> |
 
 # How To Install
