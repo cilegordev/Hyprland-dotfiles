@@ -21,7 +21,7 @@ Free bloat❗️ just installed from repo❗️ 0 from outside repo❗️
 # How To Install
 
 ```zsh
-git clone --depth=1 https://github.com/cilegordev/Hyprland-dotfiles ~/Hyprland-dotfiles
+git clone --depth=1 --branch=bottom-bar https://github.com/cilegordev/Hyprland-dotfiles ~/Hyprland-dotfiles
 cd ~/Hyprland-dotfiles
 cp -rv ./* .[^/]* ~
 ```
