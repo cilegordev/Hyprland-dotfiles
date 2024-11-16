@@ -233,9 +233,9 @@
 			"hibernate": "systemctl hibernate"
 		}
     },
-        "custom/menu": {
+    "custom/menu": {
         "format" : "          ",
 		"tooltip": false,
 		"on-click": "pkill wofi || wofi --show drun"
-    }
+    },
 }
