@@ -1,12 +1,13 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "PlusJakartaSans, Segoe Fluent Icons";
+    font-family: "PlusJakartaSans, Segoe Fluent Icons, FiraCode Nerd Font";
     font-size: 13px;
     padding: 1px;
     margin: 0px 0px 1px 0px;
     border-radius: 4px;
 }
 
+/* see https://developer.mozilla.org/en-US/docs/Web/CSS/named-color to get color */
 window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
@@ -20,10 +21,10 @@ window#waybar.hidden {
 }
 
 window#waybar.empty {
-    background-color: transparent;
+    background-color: rgba(43, 48, 59, 0.5);
 }
 window#waybar.solo {
-    background-color: transparent;
+    background-color: rgba(43, 48, 59, 0.5);
 }
 
 window#waybar.termite {
@@ -102,6 +103,7 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
+#custom-dev-tools,
 #mpd {
     padding: 0px 6px;
     margin-bottom: -1px;
@@ -155,8 +157,9 @@ button:hover {
     animation-direction: alternate;
 }
 
-#power-profiles-daemon {
-    padding-right: 15px;
+#custom-dev-tools {
+    color: #ff0000;
+    padding: 0px;
 }
 
 #power-profiles-daemon.performance {
@@ -341,7 +344,7 @@ label:focus {
 }
 
 #custom-menu {
-    background-image: url('/home/alectro/.config/waybar/logo.png');
+    background-image: url('/usr/share/icons/Flat-ZOMG-dark/apps/scalable/kali-autopsy.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

@@ -19,6 +19,7 @@
         // "hyprland/mode",
         // "hyprland/scratchpad",
         "custom/media"
+        // "custom/dev-tools" // Just use as necessary
     ],
     "modules-center": [
         "hyprland/window"
@@ -39,23 +40,25 @@
         "clock",
         "custom/power"
     ],
-    //Modules configuration
+    // Modules configuration
      "hyprland/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
          "warp-on-scroll": false,
          "format": "{icon}",
          "format-icons": {
-         "1": "", 
+         "1": "", 
          "2": "", 
-         "3": "", 
+         "3": "", 
          "4": "", 
-         "5": "", 
+         "5": "", 
          "6": "", 
-         "7": "",  
+         "7": "",  
          "8": "", 
-         "9": "", 
-         "10": "",
+         "9": "", 
+         "10": "",
+         "11": "",
+         "12": "",
              "urgent": "",
              "focused": "",
              "default": ""
@@ -154,8 +157,8 @@
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-alt": "{icon} {time}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
         "format-icons": ["", "", "", "", "", "", "", "", "", "", "",]
     },
     "battery#bat2": {
@@ -222,7 +225,7 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
-        "format" : "  ",
+        "format" : "",
 		"tooltip": false,
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
@@ -234,8 +237,15 @@
 		}
     },
     "custom/menu": {
-        "format" : "          ",
+        "format" : "         ",
 		"tooltip": false,
-		"on-click": "pkill wofi || wofi --show drun"
+		"on-click": "pkill wofi || wofi"
+    },
+    "custom/dev-tools": {
+        "format" : "",
+        	"tooltip-format": " RUN AS ROOT! CAREFUL!",
+		"tooltip": true,
+		"on-click": "sudo -E qterminal",
+		"on-click-right": "sudo -E thunar"
     },
 }
