@@ -24,7 +24,8 @@ Free bloat❗️ just installed from repo❗️ 0 from outside repo❗️
 git clone --depth=1 https://github.com/cilegordev/Hyprland-dotfiles ~/Hyprland-dotfiles
 cd ~/Hyprland-dotfiles
 cp -rv ./* .[^/]* ~
-rm -rfv ~.git ~cat-on-line.png ~LICENSE ~README.md ~Screenshot.png ~Hyprland-dotfiles
+cd ~
+rm -rfv .git cat-on-line.png LICENSE README.md Screenshot.png Hyprland-dotfiles
 ```
 # Keybinds
 
