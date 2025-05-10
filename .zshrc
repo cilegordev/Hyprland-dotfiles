@@ -1,5 +1,3 @@
-# COPYING FROM https://gitlab.com/kalilinux/packages/kali-defaults/-/blob/kali/master/etc/skel/.zshrc
-
 # ~/.zshrc file for zsh interactive shells.
 # see /usr/share/doc/zsh/examples/zshrc for examples
 
@@ -97,9 +95,8 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 configure_prompt() {
-    # for user terminal
     prompt_symbol=㉿
-    # for root terminal
+    # Skull emoji for root terminal
     #[ "$EUID" -eq 0 ] && prompt_symbol=㉿
     case "$PROMPT_ALTERNATIVE" in
         twoline)
@@ -109,7 +106,7 @@ configure_prompt() {
             ;;
         oneline)
             PROMPT=$'${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%B%F{%(#.red.blue)}%n%F{white}'$prompt_symbol$'%F{blue}%m%b%F{white}: %F{reset}%B%F{%(#.blue.green)}%F{white}[ %F{green}%~ %F{white}]%b%F{reset}%(#.#.$) '
-            RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
+            RPROMPT=$'%(?.. %? %F{red}%BX%b%F{reset})%(1j. %j %F{yellow}%BO%b%F{reset}.)'
             ;;
         bash)
             PROMPT=$'${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%B%F{red}%n@%m%b%F{reset}:%B%F{blue}%~%b%F{reset}%(#.#.$) '
@@ -121,10 +118,10 @@ configure_prompt() {
 
 # The following block is surrounded by two delimiters.
 # These delimiters must not be modified. Thanks.
-# START SHELL CONFIG VARIABLES
+# START KALI CONFIG VARIABLES
 PROMPT_ALTERNATIVE=oneline
 NEWLINE_BEFORE_PROMPT=no
-# STOP SHELL CONFIG VARIABLES
+# STOP KALI CONFIG VARIABLES
 
 if [ "$color_prompt" = yes ]; then
     # override default virtualenv indicator in prompt
@@ -195,10 +192,10 @@ toggle_oneline_prompt(){
 zle -N toggle_oneline_prompt
 bindkey ^P toggle_oneline_prompt
 
-# If this is an xterm set the title to Terminal
+# If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*|Eterm|aterm|kterm|gnome*|alacritty)
-    TERM_TITLE=$'\e]0;$(. /etc/os-release; echo "$NAME")\a'
+    TERM_TITLE=$'\e]0;${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%n@%m: %~\a'
     ;;
 *)
     ;;
@@ -250,14 +247,19 @@ fi
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
-alias lla='ls -a -l'
-alias dh='df'
-alias cls='clear'
-alias s='sudo'
-alias ex='exit'
-alias ssr='sudo rm -rfv'
-alias dnf='sudo apt -y'
-alias uninstall='sudo apt remove --purge'
+
+alias s="sudo"
+alias ex="exit"
+alias cls="clear"
+alias ext="tar -xvf"
+alias ssr="sudo rm -rfv"
+alias apt="sudo apt"
+alias chown="sudo chown -R"
+alias chmod="sudo chmod"
+alias dmesg="sudo dmesg"
+alias reboot="sudo init 6"
+alias poweroff="sudo init 0"
+alias install="sudo apt install --no-install-recommends"
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
