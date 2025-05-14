@@ -1,0 +1,7 @@
+#!/bin/bash
+modprobe zram
+echo 1 > /sys/block/zram0/reset
+echo zstd > /sys/block/zram0/comp_algorithm
+echo $((1024 * 1024 * 2385)) > /sys/block/zram0/disksize
+mkswap /dev/zram0
+swapon /dev/zram0 -p 100
