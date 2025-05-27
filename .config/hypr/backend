@@ -1,5 +1,5 @@
 #!/bin/sh
-# Requires : linux-firmware alsa-utils pulseaudio pavucontrol
+# Requires : brightnessctl linux-firmware alsa-utils amixer pulseaudio pavucontrol
 
 # Still Remember Should I Use Kali Linux?
 # DOC https://www.kali.org/docs/introduction/should-i-use-kali-linux/
